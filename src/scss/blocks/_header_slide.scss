@@ -1,0 +1,119 @@
+.slide {
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #555;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--norway{
+        background-image: url('/01.jpg');
+
+    }
+
+    &--austria{
+        background-image: url('/02.jpg');
+
+    }
+    &--uae{
+        background-image: url('/03.jpg');
+
+    }
+    &--thailand{
+        background-image: url('/04.jpg');
+
+    }
+    &--morocco{
+        background-image: url('/05.jpg');
+
+    }
+    
+    
+
+
+
+    &::before{
+        content: '';
+        cursor: grab;
+        
+    }
+    
+
+    &:active{
+        cursor: grabbing;
+    }
+
+    @media (max-width: 1200px) {
+        padding-bottom: 60px;
+        
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+        padding-top: 10px;
+        
+    }
+
+}
+
+.slide_header {
+    position: relative;
+    text-align: center;
+    
+}
+
+.slide_title{
+    font-size: 12vw;
+    font-weight: 700;
+    line-height: 1.22;
+
+    @media (max-width: 767px) {
+        font-size: 18vw;
+        
+    }
+
+  
+}
+
+.slide_tagline{
+    position: absolute;
+    top: 8vw;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.5vw;
+    line-height: 1.23;
+    letter-spacing: 0.55em;
+    color: rgba(255, 255, 255, 0.7);
+
+    @media (max-width: 767px) {
+        font-size: 3vw;
+        
+    }
+
+
+}
+
+.slide_location{
+    display: flex;
+    column-gap: 30px;
+    width: 70%;
+    margin: 0 auto;
+
+    padding-bottom: 50px;
+
+    @media (max-width: 767px) {
+        width: 90%;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 120px;
+        
+    }
+
+
+}

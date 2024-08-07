@@ -1,0 +1,45 @@
+.slider-control_arrows button{
+    
+    background: transparent;
+    border: none;
+    
+    
+    
+}
+
+
+
+.slider-control {
+    display: grid;
+    gap: 15px;
+}
+
+.slider-control_arrows{
+    display: flex;
+    column-gap: 5px;
+    filter: brightness(4);
+    
+}
+
+.slider-control_count{
+    padding-left: 25px;
+    display: flex;
+    column-gap: 6px;
+    // justify-content: flex-end;
+    // align-items: flex-end;
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: right;
+}
+
+.slider-control_current{
+    font-size: 32px;
+    line-height: 0.75;
+    color: white;
+}
+
+
+

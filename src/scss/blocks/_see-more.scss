@@ -1,0 +1,25 @@
+.see-more{
+    pointer-events: all;
+    position: relative;
+    padding-left: 60px;
+    color: rgba(255, 255, 255, 0.6) !important;
+
+    display: block;
+    
+    transform: rotate(-90deg) translate(50%,-300%);
+    
+
+    &::before{
+        content: '';
+
+        position: absolute;
+        left: 0;
+        top: calc(50% - 1.5px);
+
+        width: 38px;
+        height: 3px;
+        background-color: white;
+        opacity: 0.3;
+    }
+    
+}
